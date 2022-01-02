@@ -3,11 +3,13 @@ import Layout from "./common/components/Layout";
 import Card from "./common/components/Card";
 import Text from "./common/components/Text";
 import ButtonText from "./common/components/ButtonText";
+import Avatar from "./common/components/Avatar";
 
 function App() {
   return (
     <Layout>
       <Card>
+        <Avatar img="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" />
         <Text isBold color="purple">
           amyrobson
         </Text>
