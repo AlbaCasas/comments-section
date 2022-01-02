@@ -1,6 +1,5 @@
-import Layout from "./common/components/Layout";
 import "./common/style.scss";
-
+import Layout from "./common/components/Layout";
 import Card from "./common/components/Card";
 
 function App() {

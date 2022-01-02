@@ -1,6 +1,11 @@
 .card {
-  background-color: $darkGray;
+  background-color: $white;
   border-radius: 10px;
-  padding: 56px;
-  margin: 100px;
+  padding: 16px;
+}
+
+@media (min-width: $media-desktop) {
+  .card {
+    padding: 24px;
+  }
 }
