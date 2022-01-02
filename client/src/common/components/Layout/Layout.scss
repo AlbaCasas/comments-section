@@ -1,0 +1,18 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  min-width: 100vw;
+}
+
+.layout__main {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 24px 16px;
+}
+
+@media (min-width: $media-desktop) {
+  .layout__main {
+    width: 720px;
+    padding: 64px 0px;
+  }
+}

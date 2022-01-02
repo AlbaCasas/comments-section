@@ -1,11 +1,8 @@
+import Layout from "./common/components/Layout";
 import "./common/style.scss";
 
 function App() {
-  return (
-    <did>
-      <div className="body">Holi</div>
-    </did>
-  );
+  return <Layout>Holi</Layout>;
 }
 
 export default App;
