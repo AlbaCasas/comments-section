@@ -3,9 +3,16 @@ import Card from "../../../common/components/Card";
 import Text from "../../../common/components/Text";
 import Likes from "../Likes";
 
-const Comment = ({ userName, userPicture, likes, createdAt, children }) => {
+const Comment = ({
+  userName,
+  userPicture,
+  likes,
+  createdAt,
+  children,
+  className,
+}) => {
   return (
-    <Card className="comment">
+    <Card className={`comment ${className}`}>
       <Likes count={likes} className="comment__likes" />
       <div className="comment__box">
         <div className="comment__header">

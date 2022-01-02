@@ -1,7 +1,8 @@
 .likes {
   border-radius: 10px;
   background: $lightGray;
-  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,7 +26,7 @@
   .likes {
     flex-direction: column;
     padding: 8px 0px;
-    width: 40px;
+    min-width: 40px;
     height: 100px;
   }
 }

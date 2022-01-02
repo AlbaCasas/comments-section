@@ -1,0 +1,9 @@
+.feed__comment {
+  margin-bottom: 8px;
+}
+
+@media (min-width: $media-desktop) {
+  .feed__comment {
+    margin-bottom: 16px;
+  }
+}
