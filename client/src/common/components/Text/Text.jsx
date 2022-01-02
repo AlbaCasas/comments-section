@@ -1,6 +1,6 @@
 import { getColorClassName } from "../../utils";
 
-const Text = ({ children, isBold, color, className }) => {
+const Text = ({ children, isBold, color, className = "" }) => {
   const colorClassName = getColorClassName(color);
   return (
     <p
