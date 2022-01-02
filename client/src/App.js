@@ -1,5 +1,11 @@
+import "./common/style.scss";
+
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <did>
+      <div className="body">Holi</div>
+    </did>
+  );
 }
 
 export default App;
