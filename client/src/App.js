@@ -1,4 +1,5 @@
 import Card from "./common/components/Card";
+import "./common/style.scss";
 
 function App() {
   return <Card>Hello world</Card>;
