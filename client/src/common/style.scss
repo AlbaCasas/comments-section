@@ -1,4 +1,8 @@
-@import "./styles/settings.scss";
-@import "./styles/generic.scss";
-@import "./styles/base.scss";
-@import "./styles/objects.scss";
+/** Global */
+@import "styles/settings";
+@import "styles/generic";
+@import "styles/base";
+@import "styles/objects";
+
+/** Components */
+@import "components/Card/Card";
