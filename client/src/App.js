@@ -4,6 +4,7 @@ import Card from "./common/components/Card";
 import Text from "./common/components/Text";
 import ButtonText from "./common/components/ButtonText";
 import Avatar from "./common/components/Avatar";
+import TextArea from "./common/components/TextArea";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           Delete
         </ButtonText>
       </Card>
+      <TextArea placeholder="Add a comment..." />
     </Layout>
   );
 }
