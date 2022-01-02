@@ -3,6 +3,7 @@ import Layout from "./common/components/Layout";
 import Card from "./common/components/Card";
 import Text from "./common/components/Text";
 import Icon from "./common/components/Icon";
+import Button from "./common/components/Button";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           obertall it looks incredible. You've nailed the design and the
           responsiveness at variois breakpoints works really well.
         </Text>
+        <Button>Send</Button>
       </Card>
       <Icon name="trash" color="red" />
     </Layout>
