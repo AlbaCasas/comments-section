@@ -1,0 +1,31 @@
+.likes {
+  border-radius: 10px;
+  background: $lightGray;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+
+  &__icon {
+    cursor: pointer;
+    font-size: 12px;
+    color: $lightBlue;
+  }
+
+  &__counter {
+    line-height: 1;
+    font-size: 16px;
+    color: $blue;
+  }
+}
+
+@media (min-width: $media-desktop) {
+  .likes {
+    flex-direction: column;
+    padding: 8px 0px;
+    width: 40px;
+    height: 100px;
+  }
+}

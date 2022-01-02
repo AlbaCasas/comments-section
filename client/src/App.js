@@ -5,6 +5,7 @@ import Text from "./common/components/Text";
 import ButtonText from "./common/components/ButtonText";
 import Avatar from "./common/components/Avatar";
 import TextArea from "./common/components/TextArea";
+import Feed from "./feed/Feed";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <ButtonText iconName="trash" color="red">
           Delete
         </ButtonText>
+        <Feed />
       </Card>
       <TextArea placeholder="Add a comment..." />
     </Layout>
