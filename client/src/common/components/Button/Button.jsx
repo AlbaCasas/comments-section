@@ -1,8 +1,10 @@
 import { getBgClassName } from "../../utils";
 
-const Button = ({ color, children }) => {
+const Button = ({ color, children, className = "" }) => {
   return (
-    <button className={`button ${getBgClassName(color)}`}>{children}</button>
+    <button className={`button ${getBgClassName(color)} ${className}`}>
+      {children}
+    </button>
   );
 };
 

@@ -2,8 +2,6 @@ import "./common/style.scss";
 import Layout from "./common/components/Layout";
 import Card from "./common/components/Card";
 import Text from "./common/components/Text";
-import Icon from "./common/components/Icon";
-import Button from "./common/components/Button";
 import ButtonText from "./common/components/ButtonText";
 
 function App() {
