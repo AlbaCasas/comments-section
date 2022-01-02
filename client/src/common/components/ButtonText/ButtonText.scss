@@ -1,0 +1,15 @@
+.button-text {
+  border: none;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.button-text__icon {
+  margin-right: 8px;
+}
