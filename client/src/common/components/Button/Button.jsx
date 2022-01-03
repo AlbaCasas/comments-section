@@ -1,8 +1,11 @@
 import { getBgClassName } from "../../utils";
 
-const Button = ({ color, children, className = "" }) => {
+const Button = ({ color, children, className = "", onClick }) => {
   return (
-    <button className={`button ${getBgClassName(color)} ${className}`}>
+    <button
+      onClick={onClick}
+      className={`button ${getBgClassName(color)} ${className}`}
+    >
       {children}
     </button>
   );
