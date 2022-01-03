@@ -23,6 +23,7 @@ const Feed = () => {
             userPicture={user.image.png}
             createdAt={createdAt}
             key={id}
+            id={id}
             className="feed__comment"
           >
             {content}

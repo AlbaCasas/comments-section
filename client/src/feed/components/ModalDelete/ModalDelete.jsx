@@ -2,7 +2,7 @@ import Modal from "../../../common/components/Modal";
 import Text from "../../../common/components/Text";
 import Button from "../../../common/components/Button";
 
-const ModalDelete = ({ closeModal }) => {
+const ModalDelete = ({ closeModal, commentId }) => {
   return (
     <Modal
       title={"Delete comment"}
@@ -21,7 +21,16 @@ const ModalDelete = ({ closeModal }) => {
         >
           No, cancel
         </Button>
-        <Button className="modal-delete__button" color="red">
+        <Button
+          className="modal-delete__button"
+          color="red"
+          onClick={async () => {
+            await fetch(`http://localhost:3001/comments/${commentId}`, {
+              method: "DELETE",
+            });
+            closeModal();
+          }}
+        >
           Yes, delete
         </Button>
       </div>

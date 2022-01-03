@@ -14,6 +14,7 @@ const Comment = ({
   createdAt,
   children,
   className,
+  id,
 }) => {
   const [isShown, setIsShown] = useState(false);
 
@@ -50,7 +51,7 @@ const Comment = ({
           </div>
         </div>
       </Card>
-      {isShown && <ModalDelete closeModal={handleCancelClick} />}
+      {isShown && <ModalDelete commentId={id} closeModal={handleCancelClick} />}
     </>
   );
 };
