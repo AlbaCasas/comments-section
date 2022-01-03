@@ -1,0 +1,35 @@
+.modal-bg {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: $darkGray;
+  opacity: 0.8;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    height: 220px;
+    width: 100%;
+    max-width: 400px;
+    padding: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: $white;
+    border-radius: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+}
