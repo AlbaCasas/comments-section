@@ -3,9 +3,9 @@ import { useState } from "react";
 import Avatar from "../../../common/components/Avatar";
 import Card from "../../../common/components/Card";
 import Text from "../../../common/components/Text";
-import Likes from "../Likes";
 import ButtonText from "../../../common/components/ButtonText";
-import ModalDelete from "../ModalDelete";
+import ModalDelete from "./ModalDelete";
+import Likes from "./Likes";
 
 const Comment = ({
   userName,

@@ -1,5 +1,5 @@
-import Icon from "../../../common/components/Icon";
-import Text from "../../../common/components/Text";
+import Icon from "../../../../common/components/Icon";
+import Text from "../../../../common/components/Text";
 
 const Likes = ({ count, className = "" }) => {
   return (

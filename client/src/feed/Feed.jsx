@@ -20,7 +20,7 @@ const Feed = () => {
         {comments.map(({ id, user, content, score, createdAt }) => {
           return (
             <Comment
-              userName={user.username}
+              userName={user.userName}
               likes={score}
               userPicture={user.image.png}
               createdAt={createdAt}
