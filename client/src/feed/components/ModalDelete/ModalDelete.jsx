@@ -1,8 +1,12 @@
 import Modal from "../../../common/components/Modal";
 import Text from "../../../common/components/Text";
 import Button from "../../../common/components/Button";
+import { useContext } from "react";
+import { FeedContext } from "../../FeedContext";
+import { deleteComment, getComments } from "../../services/comments";
 
 const ModalDelete = ({ closeModal, commentId }) => {
+  const { setComments } = useContext(FeedContext);
   return (
     <Modal
       title={"Delete comment"}
@@ -25,9 +29,9 @@ const ModalDelete = ({ closeModal, commentId }) => {
           className="modal-delete__button"
           color="red"
           onClick={async () => {
-            await fetch(`http://localhost:3001/comments/${commentId}`, {
-              method: "DELETE",
-            });
+            await deleteComment(commentId);
+            const comments = getComments();
+            setComments(comments);
             closeModal();
           }}
         >
