@@ -2,6 +2,7 @@ import Avatar from "../../../common/components/Avatar";
 import Card from "../../../common/components/Card";
 import Text from "../../../common/components/Text";
 import Likes from "../Likes";
+import ModalDelete from "../ModalDelete";
 
 const Comment = ({
   userName,
@@ -25,6 +26,7 @@ const Comment = ({
         <div className="comment__content">
           <Text>{children}</Text>
         </div>
+        <ModalDelete />
       </div>
     </Card>
   );

@@ -1,0 +1,17 @@
+.modal-delete {
+  display: flex;
+  flex-direction: column;
+  &__text {
+    margin-bottom: 16px;
+  }
+  &__footer {
+    display: flex;
+    margin-top: auto;
+    & .modal-delete__button:first-child {
+      margin-right: 12px;
+    }
+    & .modal-delete__button {
+      width: 100%;
+    }
+  }
+}

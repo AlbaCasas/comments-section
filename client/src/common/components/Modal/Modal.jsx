@@ -6,7 +6,7 @@ const Modal = ({ title, children, className = "" }) => {
       <div className="modal-bg" />
       <div className="modal">
         <div className={`modal__box ${className}`}>
-          <Text className="modal__text" color="dark" isBold>
+          <Text className="modal__text" isBold>
             {title}
           </Text>
           {children}
