@@ -1,6 +1,7 @@
 .comment {
   display: flex;
   flex-direction: column-reverse;
+  position: relative;
   &__header {
     display: flex;
     flex-direction: row;
@@ -17,6 +18,13 @@
   &__username {
     margin-right: 16px;
   }
+  &__delete {
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+    height: fit-content;
+    width: fit-content;
+  }
 }
 
 @media (min-width: $media-desktop) {
@@ -24,6 +32,10 @@
     flex-direction: row;
     &__likes {
       margin-right: 24px;
+    }
+    &__delete {
+      right: 24px;
+      top: 28px;
     }
   }
 }

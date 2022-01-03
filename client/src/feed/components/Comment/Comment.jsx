@@ -2,7 +2,7 @@ import Avatar from "../../../common/components/Avatar";
 import Card from "../../../common/components/Card";
 import Text from "../../../common/components/Text";
 import Likes from "../Likes";
-import ModalDelete from "../ModalDelete";
+import ButtonText from "../../../common/components/ButtonText";
 
 const Comment = ({
   userName,
@@ -15,6 +15,9 @@ const Comment = ({
   return (
     <Card className={`comment ${className}`}>
       <Likes count={likes} className="comment__likes" />
+      <ButtonText iconName={"trash"} className={"comment__delete"} color="red">
+        Delete
+      </ButtonText>
       <div className="comment__box">
         <div className="comment__header">
           <Avatar img={userPicture} className="comment__avatar" />
@@ -26,7 +29,6 @@ const Comment = ({
         <div className="comment__content">
           <Text>{children}</Text>
         </div>
-        <ModalDelete />
       </div>
     </Card>
   );
