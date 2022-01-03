@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
+import AddComment from "../feed/components/AddComment";
 import Comment from "./components/Comment";
 import "./style.scss";
 
@@ -28,6 +29,10 @@ const Feed = () => {
           </Comment>
         );
       })}
+      <AddComment
+        className="feed__add-comment"
+        userPicture="https://pbs.twimg.com/profile_images/755400180569141249/da18-Djn_400x400.jpg"
+      />
     </div>
   );
 };

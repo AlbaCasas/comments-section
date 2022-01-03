@@ -1,0 +1,31 @@
+.add-comment {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  &__avatar {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+  }
+  &__button {
+    margin-left: auto;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: $media-desktop) {
+  .add-comment {
+    flex-wrap: initial;
+    &__avatar {
+      position: relative;
+      left: initial;
+      bottom: initial;
+      margin-right: 16px;
+    }
+    &__button {
+      margin-left: 16px;
+      margin-top: 0px;
+    }
+  }
+}
