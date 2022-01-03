@@ -30,7 +30,7 @@ const ModalDelete = ({ closeModal, commentId }) => {
           color="red"
           onClick={async () => {
             await deleteComment(commentId);
-            const comments = getComments();
+            const comments = await getComments();
             setComments(comments);
             closeModal();
           }}
