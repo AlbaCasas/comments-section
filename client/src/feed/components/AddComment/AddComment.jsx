@@ -7,8 +7,10 @@ const AddComment = ({ userPicture, className = "" }) => {
   return (
     <Card className={`add-comment ${className}`}>
       <Avatar img={userPicture} className="add-comment__avatar" />
-      <TextArea placeholder="Add a comment..."></TextArea>
-      <Button className="add-comment__button">send</Button>
+      <form className="add-comment__form" onSubmit={(e) => {}}>
+        <TextArea placeholder="Add a comment..."></TextArea>
+        <Button className="add-comment__button">send</Button>
+      </form>
     </Card>
   );
 };
